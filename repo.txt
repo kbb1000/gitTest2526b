@@ -1,1 +1,2 @@
 https://github.com/kbb1000/gitTest2526b.git
+https://dashboard.heroku.com/apps/githu/deploy/github
