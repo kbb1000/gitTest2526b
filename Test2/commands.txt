@@ -1,0 +1,59 @@
+jasons-mbp:~ Jason$ cd ~/Desktop
+jasons-mbp:Desktop Jason$ mkdir Test2
+jasons-mbp:Desktop Jason$ cd Test2
+jasons-mbp:Test2 Jason$ touch commands.txt
+jasons-mbp:Test2 Jason$ cd ~/Desktop
+jasons-mbp:Desktop Jason$ git clone https://github.com/kbb1000/gitTest2526b.git
+Cloning into 'gitTest2526b'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+jasons-mbp:Desktop Jason$ mv Test2 gitTest2526b/
+jasons-mbp:Desktop Jason$ cd gitTest2526b/
+jasons-mbp:gitTest2526b Jason$ ls
+README.md	Test2
+jasons-mbp:gitTest2526b Jason$ git add Test2
+jasons-mbp:gitTest2526b Jason$ git commit -m "new"
+[master 79189d8] new
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Test2/commands.txt
+jasons-mbp:gitTest2526b Jason$ git push origin master
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 316 bytes | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/kbb1000/gitTest2526b.git
+   b4c6317..79189d8  master -> master
+jasons-mbp:gitTest2526b Jason$ nano repo.txt
+jasons-mbp:gitTest2526b Jason$ git add repo.txt
+jasons-mbp:gitTest2526b Jason$ git commit -m "repo.txt"
+[master 4665e73] repo.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 repo.txt
+jasons-mbp:gitTest2526b Jason$ git push origin master
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 345 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/kbb1000/gitTest2526b.git
+   79189d8..4665e73  master -> master
+jasons-mbp:gitTest2526b Jason$ nano index.html
+jasons-mbp:gitTest2526b Jason$ git add index.html
+jasons-mbp:gitTest2526b Jason$ git commit -m "index"
+[master 8743c35] index
+ 1 file changed, 3 insertions(+)
+ create mode 100644 index.html
+jasons-mbp:gitTest2526b Jason$ git push origin master
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 365 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/kbb1000/gitTest2526b.git
+   4665e73..8743c35  master -> master
+jasons-mbp:gitTest2526b Jason$ cd Test2
+jasons-mbp:Test2 Jason$ nano commands.txt
